@@ -16,13 +16,15 @@ class App extends React.Component {
       stations:[],
       fares:[],
       source: "",
-      destination: ""
+      destination: "",
+      fare: ""
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.handleChange = this.handleChange.bind(this)
   }
   
   componentDidMount() {
+
     const stationList = stationDetails.map( stations => {return stations} )
     this.setState(
       { stations: stationList }  
@@ -34,18 +36,33 @@ class App extends React.Component {
         fares:fareList
       }
     )
+    
+
+  
+    
   }
+
   handleChange(event) {
-    const {name,value,type,checked} =event.target
+    const {name,value} =event.target
     this.setState({ [name]: value })
+    if (this.state.source !== "" && this.state.destination !== ""){
+    const fareFinal = fareDetails.map( fare => {
+      if (this.state.source === fare.originID && this.state.destination === fare.destID){
+        return fare.fare
+      }
+      return fare
+
+    })
+    this.setState({fare:fareFinal})
+    console.log(this.state)
+  }
+    
+
   }
   render() {
     let stationsList = this.state.stations
-    console.log(stationsList)
-    let options = stationsList.map( (list) => <option key={list.stop_name} value={list.stop_name}> {list.stop_name} </option>  ) 
-    console.log(options)
-    let faresList = this.state.fares
-    console.log(faresList)
+    let options = stationsList.map( (list) => <option key={list.stop_name} value={list.stop_id}> {list.stop_name} </option>  ) 
+    
     return (
       <div>
 
@@ -67,6 +84,9 @@ class App extends React.Component {
 
             </select>
             </form>
+            <p>Fare is:{this.state.fare}</p>
+
+            {console.log(this.state)}
         </div>  )
   }
   }
