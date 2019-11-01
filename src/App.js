@@ -19,6 +19,7 @@ class App extends React.Component {
       destination: ""
     }
     this.componentDidMount = this.componentDidMount.bind(this)
+    this.handleChange = this.handleChange.bind(this)
   }
   
   componentDidMount() {
@@ -34,11 +35,14 @@ class App extends React.Component {
       }
     )
   }
-  
+  handleChange(event) {
+    const {name,value,type,checked} =event.target
+    this.setState({ [name]: value })
+  }
   render() {
     let stationsList = this.state.stations
     console.log(stationsList)
-    let options = stationsList.map( (list) => <option key={list.stop_name}> {list.stop_name} </option>  ) 
+    let options = stationsList.map( (list) => <option key={list.stop_name} value={list.stop_name}> {list.stop_name} </option>  ) 
     console.log(options)
     let faresList = this.state.fares
     console.log(faresList)
@@ -48,13 +52,17 @@ class App extends React.Component {
             <h1>Kochi metro Fare calculator</h1>
             <form>
             <label>Source station:</label>
-            <select>
+            <select value={this.state.source}
+                    onChange={this.handleChange}
+                    name="source">
             {options}
 
             </select>
             <label>Destination station:</label>
 
-            <select>
+            <select value={this.state.destination}
+                    onChange={this.handleChange}
+                    name="destination">
             {options}
 
             </select>
