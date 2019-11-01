@@ -23,11 +23,23 @@
 body{
   display:flex;
   flex: row;
-  align-items:center;
+  background-color: #dfdfdf;
+  font-size: 20px;
 
   padding-top: 10%;
-  padding-left: 40%;
-}
+  padding-left: 25%;
+  }
 h1 {
-  
+    align-items: center;
+    padding-left:8rem;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.container {
+  background-color: aliceblue;
+  width: 90%;
+  margin: 0rem;
+  padding: 7rem;
+  border-radius: 1rem;
 }

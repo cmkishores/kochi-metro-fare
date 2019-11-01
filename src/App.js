@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import stationDetails from './stationDetails'
 import fareDetails from './fareData'
@@ -47,7 +46,8 @@ class App extends React.Component {
     this.setState({ [name]: value })
     if (this.state.source !== "" && this.state.destination !== ""){
     const fareFinal = fareDetails.map( fare => {
-      if (this.state.source === fare.originID && this.state.destination === fare.destID){
+      if (this.state.source === fare.originId && this.state.destination === fare.destId){
+        console.log(this.state.source,fare.originId,this.state.destination,fare.destId)        
         return fare.fare
       }
       return fare
@@ -64,8 +64,7 @@ class App extends React.Component {
     let options = stationsList.map( (list) => <option key={list.stop_name} value={list.stop_id}> {list.stop_name} </option>  ) 
     
     return (
-      <div>
-
+      <div className="container">
             <h1>Kochi metro Fare calculator</h1>
             <form>
             <label>Source station:</label>
