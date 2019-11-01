@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <header> Kochi Metro Fare Calculator</header>
+        <h1> Kochi Metro Fare Calculator</h1>
 
       </div>
     )
