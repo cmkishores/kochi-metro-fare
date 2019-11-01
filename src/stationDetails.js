@@ -1,4 +1,4 @@
-export default [
+const stationDetails =  [
     {
       stop_id: "ALVA",
       stop_name: "Aluva",
@@ -128,3 +128,4 @@ export default [
       wheelchair_boarding: "1",
     },
   ];
+  export default stationDetails
