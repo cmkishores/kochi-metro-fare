@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import stationDetails from './stationDetails'
+import fareDetails from './fareData'
 import { timingSafeEqual } from 'crypto';
 
 
@@ -13,19 +14,25 @@ class App extends React.Component {
     super()
     this.state = {
       stations:[],
+      fares:[],
+      source: "",
+      destination: ""
     }
     this.componentDidMount = this.componentDidMount.bind(this)
   }
   
   componentDidMount() {
-    const stationName = stationDetails.map( stations => {return stations} )
-    console.log(stationName)
+    const stationList = stationDetails.map( stations => {return stations} )
     this.setState(
-      { stations: stationName }
-       
+      { stations: stationList }  
     )
-    console.log(this.state.stations.stationName)
+    const fareList =  fareDetails.map( fares => {return fares})
   
+    this.setState(
+      {
+        fares:fareList
+      }
+    )
   }
   
   render() {
@@ -33,6 +40,8 @@ class App extends React.Component {
     console.log(stationsList)
     let options = stationsList.map( (list) => <option key={list.stop_name}> {list.stop_name} </option>  ) 
     console.log(options)
+    let faresList = this.state.fares
+    console.log(faresList)
     return (
       <div>
 
