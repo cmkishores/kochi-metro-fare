@@ -3,6 +3,7 @@ import './App.css';
 import stationDetails from './stationDetails'
 import fareDetails from './fareData'
 import { timingSafeEqual } from 'crypto';
+import 'react-bulma-components/dist/react-bulma-components.min.css';
 
 
 
@@ -70,7 +71,6 @@ class App extends React.Component {
             <header>Kochi metro Fare calculator</header>
            
             <form>
-            <div className={"custom-select"} style={{width:200}}>
             <label>Source station:</label>
             <select value={this.state.source}
                     onChange={this.handleChange}
@@ -87,11 +87,10 @@ class App extends React.Component {
             {options}
 
             </select>
-            </div>
             </form> 
             <p>Fare is: {this.state.fare} Rupees</p>
 
-            
+         
         </div>  )
   }
   }
