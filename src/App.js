@@ -14,8 +14,8 @@ class App extends React.Component {
     this.state = {
       stations:[],
       fares:[],
-      source: "",
-      destination: "",
+      source: "ALVA",
+      destination: "ALVA",
       fare: ""
     }
     this.componentDidMount = this.componentDidMount.bind(this)
@@ -44,24 +44,25 @@ class App extends React.Component {
   handleChange(event) {
     const {name,value} =event.target
     this.setState({ [name]: value })
-    if (this.state.source !== "" && this.state.destination !== ""){
-    const fareFinal = fareDetails.map( fare => {
-      if (this.state.source === fare.originId && this.state.destination === fare.destId){
-        console.log(this.state.source,fare.originId,this.state.destination,fare.destId)        
-        return fare.fare
+    const fareFinal = fareDetails.map( fare_is => { 
+      
+      if (this.state.source === fare_is.originId && this.state.destination === fare_is.destId){
+        
+        let fareCalculated = fare_is.fare
+        this.setState({fare:fareCalculated})
+        
       }
-      return fare
+    
 
     })
-    this.setState({fare:fareFinal})
-    console.log(this.state)
-  }
+ 
+  
     
 
   }
   render() {
     let stationsList = this.state.stations
-    let options = stationsList.map( (list) => <option key={list.stop_name} value={list.stop_id}> {list.stop_name} </option>  ) 
+  let options = stationsList.map( (list) => <option key={list.stop_name} value={list.stop_id}> {list.stop_name} {list.stop_id} </option>  ) 
     
     return (
       <div className="container">
@@ -82,10 +83,10 @@ class App extends React.Component {
             {options}
 
             </select>
-            </form>
-            <p>Fare is:{this.state.fare}</p>
+            </form> 
+            <p>Fare is: {this.state.fare} Rupees</p>
 
-            {console.log(this.state)}
+            
         </div>  )
   }
   }
