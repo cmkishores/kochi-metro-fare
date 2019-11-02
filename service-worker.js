@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kochi-metro-fare/precache-manifest.af2aab0dd0244bed93c97186850a4459.js"
+  "/kochi-metro-fare/precache-manifest.66c71c8c45bfc82e81e8b632c861fa7b.js"
 );
 
 self.addEventListener('message', (event) => {
