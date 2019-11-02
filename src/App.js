@@ -66,8 +66,11 @@ class App extends React.Component {
     
     return (
       <div className="container">
+        
             <header>Kochi metro Fare calculator</header>
+           
             <form>
+            <div className={"custom-select"} style={{width:200}}>
             <label>Source station:</label>
             <select value={this.state.source}
                     onChange={this.handleChange}
@@ -75,6 +78,7 @@ class App extends React.Component {
             {options}
 
             </select>
+            
             <label>Destination station:</label>
 
             <select value={this.state.destination}
@@ -83,6 +87,7 @@ class App extends React.Component {
             {options}
 
             </select>
+            </div>
             </form> 
             <p>Fare is: {this.state.fare} Rupees</p>
 

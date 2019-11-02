@@ -23,7 +23,7 @@
 body{
   display:flex;
   flex: row;
-  background-color: #dfdfdf;
+  background-color: #ffffff;
   font-size: 15px;
 
   padding-top: 10%;
@@ -38,11 +38,13 @@ h1 {
 }
 
 .container {
-  background-color: aliceblue;
+  background-color: white;
   width: 90%;
-  margin: 0rem;
-  padding: 7rem;
+  margin: 1rem;
+  padding: 3rem;
   border-radius: 1rem;
+  box-shadow:
+        0 2px 3px rgba(0,0,0,0.15);
 }
 p{
   background-color: rgb(253, 255, 253);

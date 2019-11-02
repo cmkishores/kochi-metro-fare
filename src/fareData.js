@@ -1,5 +1,5 @@
 const fareData =[
-    { originId: "ALVA", destId: "PNCU", fare: 10 },
+  { originId: "ALVA", destId: "PNCU", fare: 10 },
   { originId: "ATTK", destId: "CPPY", fare: 10 },
   { originId: "ATTK", destId: "MUTT", fare: 10 },
   { originId: "ATTK", destId: "PNCU", fare: 10 },
