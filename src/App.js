@@ -66,7 +66,7 @@ class App extends React.Component {
     
     return (
       <div className="container">
-            <h1>Kochi metro Fare calculator</h1>
+            <header>Kochi metro Fare calculator</header>
             <form>
             <label>Source station:</label>
             <select value={this.state.source}

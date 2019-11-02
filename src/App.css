@@ -24,16 +24,17 @@ body{
   display:flex;
   flex: row;
   background-color: #dfdfdf;
-  font-size: 20px;
+  font-size: 15px;
 
   padding-top: 10%;
   padding-left: 25%;
+  padding-right: 35%; 
   }
 h1 {
     align-items: center;
     padding-left:8rem;
     padding-bottom: 3rem;
-    font-size: 3rem;
+    font-size: 2.1rem;
 }
 
 .container {
@@ -42,4 +43,19 @@ h1 {
   margin: 0rem;
   padding: 7rem;
   border-radius: 1rem;
+}
+p{
+  background-color: rgb(253, 255, 253);
+  box-shadow:
+        0 1px 1px rgba(0,0,0,0.15);
+
+  font-size: 1rem;
+  width:30%;
+  border-radius:2rem;
+  padding: 1%;
+  align-items: center;
+}
+header{
+  padding:5%;
+  font-size: 2rem;
 }
