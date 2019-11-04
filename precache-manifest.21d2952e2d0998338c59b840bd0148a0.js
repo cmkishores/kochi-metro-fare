@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "927f69d60addc27587405ca38dc226af",
+    "revision": "f17b16018f0a64b11820d57aa03d6a49",
     "url": "/kochi-metro-fare/index.html"
   },
   {
-    "revision": "c019a68f5b5b50959b0c",
-    "url": "/kochi-metro-fare/static/css/main.193411b6.chunk.css"
+    "revision": "cb73e9b7f784ec3ad927",
+    "url": "/kochi-metro-fare/static/css/main.0b1fb600.chunk.css"
   },
   {
     "revision": "b7b2faad856cdfec0f60",
     "url": "/kochi-metro-fare/static/js/2.7bb0f001.chunk.js"
   },
   {
-    "revision": "c019a68f5b5b50959b0c",
-    "url": "/kochi-metro-fare/static/js/main.c1061105.chunk.js"
+    "revision": "cb73e9b7f784ec3ad927",
+    "url": "/kochi-metro-fare/static/js/main.126242ef.chunk.js"
   },
   {
     "revision": "b551b87c7798713ad774",
