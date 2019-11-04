@@ -16,7 +16,7 @@ You will also see any lint errors in the console.
 
 ### Live Version
 
-You can see the live version of the project [here](cmkishores.github.io/kochi-metro-fare/)
+You can see the live version of the project [here](https://cmkishores.github.io/kochi-metro-fare/)
 
 ### Things Learnt
 
