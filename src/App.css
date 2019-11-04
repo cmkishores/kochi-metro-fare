@@ -45,16 +45,16 @@ body{
   }
 
 .card{
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   padding:0%;
   margin:1%;
   align-items: center;
+  
 
 }
 
 .card-header {
-  background-color: purple;
+  background-color: rgb(118, 48, 175);;
   align-items: stretch;
   box-shadow: 0 0.125em 0.25em rgba(10, 10, 10, 0.1);
   display: flex;
