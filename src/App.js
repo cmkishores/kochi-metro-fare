@@ -68,7 +68,7 @@ class App extends React.Component {
       <div className="card">
         <div className="card-header">
         
-            <header className="card-header-title is-centered">Kochi metro Fare calculator</header>
+            <header className="card-header-title is-centered">Kochi-Metro Fare calculator !!</header>
             </div>
            <div className="section">
             <form>
@@ -107,9 +107,9 @@ class App extends React.Component {
 
             
               </form>
-            <div className="content is-centered">
+            <div className="content">
                
-            {this.state.fare===""?<h2 className="content-heading is-small">Please select a station ...!!</h2> : <h1 className="content-heading is-large">Fare is: {this.state.fare}₹</h1> }
+            {this.state.fare===""?<h1 className="content-heading is-small">Please select a station ...!!</h1> : <h1 className="content-heading is-large">Fare is: {this.state.fare}₹</h1> }
             </div>
             </div>
 
