@@ -21,7 +21,7 @@ You can see the live version of the project [here](cmkishores.github.io/kochi-me
 ### Things Learnt
 
 * Setting up a reactJS project from start
-* Using CSS Library Bulma for styling
+* Using CSS framework Bulma for styling
 * Parsing data from a JSON file and populating a component 
 * Changing states upon user input
 
