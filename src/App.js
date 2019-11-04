@@ -51,9 +51,9 @@ class App extends React.Component {
         let fareCalculated = fare_is.fare
         this.setState({fare:fareCalculated})
         
+      return fareCalculated;
       }
-    
-
+     return fare_is 
     })
  
   
@@ -72,7 +72,7 @@ class App extends React.Component {
             </div>
            <div className="section">
             <form>
-            <div class="field">
+            <div className="field">
             <label className="label">Source station:</label>
             <div className="control">
             
@@ -88,7 +88,7 @@ class App extends React.Component {
             </div>
             </div>
             </div>
-            <div class="field">
+            <div className="field">
             <label className="label">Destination station:</label>
             <div className="control">
             
@@ -107,10 +107,9 @@ class App extends React.Component {
 
             
               </form>
-
-            <div className="card-footer">
+            <div className="content is-centered">
                
-            <p className="card-footer is-centered">Fare is: {this.state.fare} Rupees</p>
+            {this.state.fare===""?<h2 className="content-heading is-small">Please select a station ...!!</h2> : <h1 className="content-heading is-large">Fare is: {this.state.fare}₹</h1> }
             </div>
             </div>
 
