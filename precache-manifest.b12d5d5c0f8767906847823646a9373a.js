@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ecec58092f2135848dc103a599db2de9",
+    "revision": "827124daa3455cc5d0497545a6784dff",
     "url": "/kochi-metro-fare/index.html"
   },
   {
