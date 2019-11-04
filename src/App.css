@@ -54,7 +54,7 @@ body{
 }
 
 .card-header {
-  background-color: rgb(118, 48, 175);;
+  background-color: rgb(132, 55, 196);
   align-items: stretch;
   box-shadow: 0 0.125em 0.25em rgba(10, 10, 10, 0.1);
   display: flex;
