@@ -65,10 +65,12 @@ class App extends React.Component {
   let options = stationsList.map( (list) => <option className="input" key={list.stop_name} value={list.stop_id}> {list.stop_name} {list.stop_id} </option>  ) 
     
     return (
+      <div>
       <div className="card">
         <div className="card-header">
         
             <header className="card-header-title is-centered">Kochi-Metro Fare calculator !!</header>
+
             </div>
            <div className="section">
             <form>
@@ -113,7 +115,10 @@ class App extends React.Component {
             </div>
             </div>
 
-        </div>  )
+        </div> 
+        <footer className="footer"> See the code <a href="https://github.com/cmkishores/kochi-metro-fare/"> Here! </a> </footer>
+
+  </div>          )
   }
   }
 
