@@ -1,3 +1,5 @@
+# Kochi Metro Fare Calculator
+
 This is a ReactJS project used to calculate the Kochi Metro Fare
 
 In the project directory, you can run:
