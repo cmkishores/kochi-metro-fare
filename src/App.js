@@ -3,7 +3,6 @@ import './App.css';
 import stationDetails from './stationDetails'
 import fareDetails from './fareData'
 import { timingSafeEqual } from 'crypto';
-import 'react-bulma-components/dist/react-bulma-components.min.css';
 
 
 
@@ -63,34 +62,58 @@ class App extends React.Component {
   }
   render() {
     let stationsList = this.state.stations
-  let options = stationsList.map( (list) => <option key={list.stop_name} value={list.stop_id}> {list.stop_name} {list.stop_id} </option>  ) 
+  let options = stationsList.map( (list) => <option className="input" key={list.stop_name} value={list.stop_id}> {list.stop_name} {list.stop_id} </option>  ) 
     
     return (
-      <div className="container">
+      <div className="card">
+        <div className="card-header">
         
-            <header>Kochi metro Fare calculator</header>
-           
+            <header className="card-header-title is-centered">Kochi metro Fare calculator</header>
+            </div>
+           <div className="section">
             <form>
-            <label>Source station:</label>
-            <select value={this.state.source}
+            <div class="field">
+            <label className="label">Source station:</label>
+            <div className="control">
+            
+            <div className="select">
+            <select 
+                    value={this.state.source}
                     onChange={this.handleChange}
                     name="source">
+                      
             {options}
 
             </select>
+            </div>
+            </div>
+            </div>
+            <div class="field">
+            <label className="label">Destination station:</label>
+            <div className="control">
             
-            <label>Destination station:</label>
+            <div className="select">
 
-            <select value={this.state.destination}
+            <select 
+                    value={this.state.destination}
                     onChange={this.handleChange}
                     name="destination">
             {options}
 
             </select>
-            </form> 
-            <p>Fare is: {this.state.fare} Rupees</p>
+            </div>
+            </div>
+            </div>
 
-         
+            
+              </form>
+
+            <div className="card-footer">
+               
+            <p className="card-footer is-centered">Fare is: {this.state.fare} Rupees</p>
+            </div>
+            </div>
+
         </div>  )
   }
   }
