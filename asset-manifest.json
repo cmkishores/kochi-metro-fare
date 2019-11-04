@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/kochi-metro-fare/static/css/main.1b051b28.chunk.css",
-    "main.js": "/kochi-metro-fare/static/js/main.7c4ef2ae.chunk.js",
-    "main.js.map": "/kochi-metro-fare/static/js/main.7c4ef2ae.chunk.js.map",
+    "main.css": "/kochi-metro-fare/static/css/main.e094fcfc.chunk.css",
+    "main.js": "/kochi-metro-fare/static/js/main.74a25795.chunk.js",
+    "main.js.map": "/kochi-metro-fare/static/js/main.74a25795.chunk.js.map",
     "runtime-main.js": "/kochi-metro-fare/static/js/runtime-main.73325d96.js",
     "runtime-main.js.map": "/kochi-metro-fare/static/js/runtime-main.73325d96.js.map",
-    "static/js/2.4d356177.chunk.js": "/kochi-metro-fare/static/js/2.4d356177.chunk.js",
-    "static/js/2.4d356177.chunk.js.map": "/kochi-metro-fare/static/js/2.4d356177.chunk.js.map",
+    "static/js/2.7bb0f001.chunk.js": "/kochi-metro-fare/static/js/2.7bb0f001.chunk.js",
+    "static/js/2.7bb0f001.chunk.js.map": "/kochi-metro-fare/static/js/2.7bb0f001.chunk.js.map",
     "index.html": "/kochi-metro-fare/index.html",
-    "precache-manifest.66c71c8c45bfc82e81e8b632c861fa7b.js": "/kochi-metro-fare/precache-manifest.66c71c8c45bfc82e81e8b632c861fa7b.js",
+    "precache-manifest.ebdcd1b39bb7055d8604b69d064f6e59.js": "/kochi-metro-fare/precache-manifest.ebdcd1b39bb7055d8604b69d064f6e59.js",
     "service-worker.js": "/kochi-metro-fare/service-worker.js",
-    "static/css/main.1b051b28.chunk.css.map": "/kochi-metro-fare/static/css/main.1b051b28.chunk.css.map"
+    "static/css/main.e094fcfc.chunk.css.map": "/kochi-metro-fare/static/css/main.e094fcfc.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.73325d96.js",
-    "static/js/2.4d356177.chunk.js",
-    "static/css/main.1b051b28.chunk.css",
-    "static/js/main.7c4ef2ae.chunk.js"
+    "static/js/2.7bb0f001.chunk.js",
+    "static/css/main.e094fcfc.chunk.css",
+    "static/js/main.74a25795.chunk.js"
   ]
 }
